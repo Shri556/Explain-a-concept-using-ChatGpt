@@ -13,7 +13,7 @@ class Generate():
             messages =[
                 {
                     "role":"system",
-                    "content":"Explain Concept"
+                    "content":"Explain"
                 },
 
                 {
