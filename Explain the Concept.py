@@ -50,7 +50,7 @@ def main(page:ft.Page):
     logo = ft.Image(src="Logo\\favicon.png",width=100)
     user_input = ft.TextField(hint_text="Enter any sentence...",border_radius=10,width=450,autofocus=True)
     generate_btn = ft.ElevatedButton("Generate",bgcolor="#1a0f00",on_click=Generate_answer)
-    output_Text = ft.Text(value=" ",font_family="Titllium",size=15,weight=90,max_lines=900,)
+    output_Text = ft.Text(value=" ",font_family="Titllium",size=15,weight=90,max_lines=900,selectable=True)
 
     page.add(
         logo,
