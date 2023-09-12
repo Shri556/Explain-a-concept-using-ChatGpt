@@ -25,6 +25,9 @@ def main(page:ft.Page):
     
 
     def Generate_answer(e):
+        ft.Text.value = ""
+        generate_btn.visible = False
+        page.update()
         answer = str(Generate(user_input.value).send_response())
         output_Text.value = "Generating"
         output_Text.update()
@@ -46,6 +49,9 @@ def main(page:ft.Page):
             sleep(0.01)
             output_Text.value = output_Text.value[:-1]
             output_Text.update()
+
+        generate_btn.visible = True
+        generate_btn.update()
 
     logo = ft.Image(src="Logo\\favicon.png",width=100)
     user_input = ft.TextField(hint_text="Enter any sentence...",border_radius=10,width=450,autofocus=True)
