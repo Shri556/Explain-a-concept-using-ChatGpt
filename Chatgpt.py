@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = "<YOUR_API>"
+openai.api_key = open("key.txt","r").read()
 
 class Generate():
 
